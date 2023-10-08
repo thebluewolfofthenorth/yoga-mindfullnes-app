@@ -1,5 +1,35 @@
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=PT+Serif:ital@0;1&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: PT, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+/* heading and logo */
+
+h1,
+h2 {
+    font-size: PT, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+
+
   /* Navbar */
 
 .top-nav {
