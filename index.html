@@ -15,19 +15,21 @@
 
 <body>
     <header>
-        <nav class="top-nav sticky">
-            <a href="index.html">
-                <h1 id="logo">PUST</h1>
-            </a>
-            <input id="menu-switch" type="checkbox">
-            <label class='menu-button-container' for="menu-switch"><span class='menu-button'></span></label>
-            <ul class="menu">
+        <a href="index.html">
+            <h1 class="logo">PUST</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
                 <li><a href="#">Techniques</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Lessons</a></li>
                 <li><a href="#">Sign up</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
         <!-- Hero Section -->
         <section id="hero-outer">
