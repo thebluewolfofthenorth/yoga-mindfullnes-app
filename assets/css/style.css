@@ -1,304 +1,370 @@
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=PT+Serif:ital@0;1&display=swap');
 
-  :root{
-    --background:#FCBA12;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-body {
-    font-family: PT, sans-serif;
-    font-weight: 300;
-    color: #342809;
-    background-color: #FFF5DC;
-    font-weight: 400;
-}
-
-hr {
-    height: 30px;
+  :root {
+      --background: #342809;
   }
 
-/* heading and logo */
 
-h1,
-h2 {
-    font-size: PT, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  body {
+      font-family: PT, sans-serif;
+      font-weight: 300;
+      color: #342809;
+      background-color: #FCBA12;
+      padding-bottom: 50px;
+  }
+
+
+  /* heading and logo */
+
+  h1,
+  h2 {
+      font-size: PT, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #FED777;
+  }
+
+  .logo {
+      float: right;
+      font-size: 280%;
+      margin-right: 50%;
+  }
+
+
+
+  /* Navbar */
+
+  header {
+      background: var(--background);
+      text-align: center;
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+  }
+
+  .nav-toggle {
+      display: none;
+  }
+
+  .nav-toggle-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 1em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label::before,
+  .nav-toggle-label span::after {
+      display: block;
+      background: #FCBA12;
+      width: 2em;
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
+      position: relative;
+  }
+
+  .nav-toggle-label::before,
+  .nav-toggle-label span::after {
+      content: '';
+      position: absolute;
+  }
+
+  .nav-toggle-label::before {
+      bottom: 7px;
+  }
+
+  .nav-toggle-label::after {
+      top: 7px;
+  }
+
+  nav {
+      position: absolute;
+      text-align: left;
+      top: 100%;
+      left: 0;
+      background: var(--background);
+      width: 100%;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 400ms ease-in-out;
+  }
+
+
+  nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  nav li {
+      margin-bottom: 1em;
+      margin-left: 1em;
+  }
+
+  nav a {
+      color: #FCBA12;
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out 250ms;
+  }
+
+  nav a:hover {
+      color: #FFF5DC;
+  }
+
+  .nav-toggle:checked~nav {
+      transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked~nav a {
+      opacity: 1;
+      transition: opacity 100ms ease-in-out;
+  }
+
+  /* hero image */
+
+
+  #hero-outer {
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+
+  #cover-text,
+  #cover-text h2 {
+      color: #A77802;
+  }
+
+  #hero-image {
+      height: 600px;
+      width: 100%;
+      background: url(../images/yogamedation.webp) no-repeat center center;
+
+      /* animates zoom effect on loading page */
+      animation-name: hero-zoom;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+  }
+
+
+
+  /* creates the leve of zoom for hero image */
+
+  @keyframes hero-zoom {
+      from {
+          transform: scale(1);
+      }
+
+      to {
+          transform: scale(1.1);
+      }
+  }
+
+  #cover-text {
+      font-size: 90%;
+      font-family: Oswald, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 170%;
+
+      width: 350px;
+      height: 230px;
+
+      padding-top: 20px;
+      padding-left: 10px;
+
+      background-color: rgba(254, 215, 119, .7);
+      bottom: 160px;
+      right: 20px;
+      position: absolute;
+  }
+
+
+
+  /* testimonials*/
+
+  #testimonials {
+      background-color: #FFF5DC;
+      padding: 20px;
+      text-align: center;
+  }
+
+  #testimonials h2 {
+    margin-bottom: 20px;
+      color: #342809;
+  }
+
+  .testimonial {
+      margin-bottom: 20px;
+  }
+
+  .testimonial p {
+      font-style: Oxyge sans-serif;
+      margin-bottom: 10px;
+  }
+
+  .testimonial span {
+      color: #777;
+      font-size: 0.9em;
+  }
+
+  #testimonials {
+    background-color: #FFF5DC; 
+    padding: 20px;
+    text-align: center; 
+}
+
+/* --- */
+
+
+
+
+section h2{
     color: #342809;
-}
-
-.logo {
-    float: right;
-    font-size: 280%;
-    margin-right: 50%;
+    text-decoration: underline;
 }
 
 
 
- /* Navbar */
+  /* sticky footer */
 
- header{
-    background: var(--background);
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
- }
-
-.nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label::before,
-.nav-toggle-label span::after{
-    display: block;
-    background: #342809;
-    width: 2em;
-    height: 2px;
-    width: 2em;
-    border-radius: 2px;
-    position: relative;
-}
-
-.nav-toggle-label::before,
-.nav-toggle-label span::after{
-    content: '';
-    position: absolute;
-}
-
-.nav-toggle-label::before{
-    bottom: 7px;
-}
-
-.nav-toggle-label::after{
-    top: 7px;
-}
-
-nav{
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background: var(--background);
-    width: 100%;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-}
+  footer {
+      background-color: #342809;
+      color: #342809;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
 
 
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li{
-    margin-bottom: 1em;
-    margin-left: 1em;
-}
-
-nav a {
-    color: #342809;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 250ms ease-in-out 250ms;
-}
-
-nav a:hover{
-    color: #FFF5DC;
-}
-
-.nav-toggle:checked ~ nav {
-    transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
-    opacity: 1;
-    transition: opacity 100ms ease-in-out;
-}
-
-/* hero image */
-
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#cover-text,
-#cover-text h2 {
-    color: #fff;
-}
-
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url(../images/yogamedation.webp) no-repeat center center;
-
-    /* animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-
-/* creates the leve of zoom for hero image */
-
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-}
-
-#cover-text {
-    font-size: 130%;
-    font-family: Oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-
-    width: 300px;
-    height: 200px;
-
-    padding-top: 40px;
-    padding-left: 10px;
-
-    background-color: rgba(241, 109, 107, .7);
-    bottom: 30px;
-    right: 150px;
-    position: absolute;
-}
-
-
-
-
-
-
-/* footer */
-
-footer{
-    height: 180px;
-}
-
-.social-networks{
-    text-align:  center;
-}
-
-.social-networks > li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: #3a3a3a;
-}
-
+  .social-networks {
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      font-size: 150%;
+  }
 
 
 
 
   @media screen and (min-width: 768px) {
-    .nav-toggle-label{
-        display: none;
+      .nav-toggle-label {
+          display: none;
+      }
+
+      header {
+          display: grid;
+          grid-template-columns: 1fr auto minmax(600px 1fr) 3fr;
+      }
+
+      .logo {
+          grid-column: 2 / 3;
+      }
+
+      nav {
+          all: unset;
+          grid-column: 3/4;
+          display: flex;
+          justify-content: flex-end;
+          align-items: right;
+          margin: 1em;
+
+      }
+
+      nav ul {
+          display: flex;
+
+      }
+
+      nav li {
+          margin-left: 3em;
+          margin-bottom: o;
+      }
+
+      nav a {
+          opacity: 1;
+          position: relative;
+      }
+
+      nav a::before {
+          content: '';
+          display: block;
+          height: 5px;
+          background: #FFF5DC;
+          position: absolute;
+          bottom: -.75em;
+          left: 0;
+          right: 0;
+          transform: scale(0, 1);
+          transition: transform ease-in-out 250ms;
+      }
+
+
+      nav a:hover::before {
+          transform: scale(1, 1);
+
+      }
+
+      #cover-text {
+          font-size: 130%;
+
+          width: 600px;
+          height: 250px;
+
+
+          bottom: 50px;
+          left: 20px;
+      }
+
+
+      .hero-image,
+      #index-img {
+          height: 37em;
+          background-position: bottom;
+      }
+
+
+      #testimonials {
+        text-align: left;
+    }
+    .testimonial {
+        max-width: 500px; 
+        margin: 20px auto;
     }
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px 1fr) 3fr;
-    }
-
-   .logo{
-    grid-column: 2 / 3;
-   }
-
-   nav {
-    all: unset;
-    grid-column: 3/4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: right;
-    margin: 1em;
-    
-   }
-   
-   nav ul {
-    display: flex;
-
-   }
-
-   nav li{
-    margin-left: 3em;
-    margin-bottom: o;
-   }
-
-   nav a {
-    opacity: 1;
-    position: relative;
-   }
-
-   nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: #FFF5DC;
-    position: absolute;
-    bottom: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-   }
+  }
 
 
-   nav a:hover::before{
-    transform: scale(1, 1);
 
-   }
-  
-    }
-  
-  
-  
-  
   @media screen and (min-width:992px) {
-  
+
       /* Home Page */
-    
+
       .menu {
-        width: 46em;
+          width: 46em;
       }
-    
+
       .top {
-        background-color: var(--dark);
+          background-color: var(--dark);
       }
+
+
   }
