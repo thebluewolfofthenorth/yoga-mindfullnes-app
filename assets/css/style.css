@@ -154,12 +154,12 @@
   /*--end--*/
 
   .introduction {
-    padding: 15px;
-    margin-top: 3%;
-    line-height: 1.7rem;
-    margin-bottom: 3%;
-    font-size: 1rem;
-}
+      padding: 15px;
+      margin-top: 3%;
+      line-height: 1.7rem;
+      margin-bottom: 3%;
+      font-size: 1rem;
+  }
 
 
   /* hero image */
@@ -389,7 +389,7 @@
       /*--min-height: 100vh;--*/
       height: 100%;
       padding: 20px;
-      background-color: var(--primary); 
+      background-color: var(--primary);
   }
 
   .signup-box {
@@ -407,9 +407,10 @@
       flex-direction: column;
   }
 
-  form label, form input {
-    margin-bottom: 10px;
-}
+  form label,
+  form input {
+      margin-bottom: 10px;
+  }
 
   label,
   input {
@@ -579,9 +580,9 @@
       }
 
       .introduction {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-    }
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+      }
 
       #cover-text {
           font-size: 130%;
@@ -697,10 +698,10 @@
           background-color: var(--dark);
       }
 
-          .introduction {
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-    }
+      .introduction {
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+      }
 
 
   }
