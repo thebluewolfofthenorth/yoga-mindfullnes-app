@@ -36,8 +36,9 @@
   h2 {
       font-family: 'PT Serif', sans-serif;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: .1em;
       color: var(--secondary);
+      font-size: 1.5em;
   }
 
 
@@ -499,7 +500,7 @@
     .main {
         margin-top: 80px;
       }
-      
+
       .nav-toggle-label {
           display: none;
       }
