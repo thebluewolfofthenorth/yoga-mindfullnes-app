@@ -205,7 +205,7 @@
   }
 
   #testimonials h2 {
-    margin-bottom: 20px;
+      margin-bottom: 20px;
       color: #342809;
   }
 
@@ -224,20 +224,126 @@
   }
 
   #testimonials {
-    background-color: #FFF5DC; 
+      background-color: #FFF5DC;
+      padding: 20px;
+      text-align: center;
+  }
+
+  /* --- */
+
+  /*Techniques*/
+
+  #techniques-section {
+      padding: 20px;
+      background-color: #FFF5DC;
+  }
+
+  .technique {
+      margin-bottom: 20px;
+      background-color: #FFF5DC;
+      padding: 20px;
+      border-radius: 8px;
+  }
+
+  .technique h2 {
+      margin-bottom: 10px;
+  }
+
+  .technique-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+  }
+
+  .technique a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #FFF5DC;
+      text-decoration: none;
+  }
+
+  /*---*/
+
+  /*support*/
+  #resources {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.resource-category {
+    margin-bottom: 40px;
+}
+
+.resource-category h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.resource-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-category li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px; 
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+  /*---*/
+
+  /*Sign up*/
+  #signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures section takes up the full viewport height */
     padding: 20px;
-    text-align: center; 
 }
 
-/* --- */
-
-
-
-
-section h2{
-    color: #342809;
-    text-decoration: underline;
+.signup-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+
+  /*----*/
+
+
+  section h2 {
+      color: #342809;
+      text-decoration: underline;
+  }
 
 
 
@@ -343,12 +449,50 @@ section h2{
 
 
       #testimonials {
-        text-align: left;
+          text-align: left;
+      }
+
+      .testimonial {
+          max-width: 500px;
+          margin: 20px auto;
+      }
+
+
+      /*Techniques*/
+      #techniques-section {
+          display: flex;
+          justify-content: space-between;
+          padding: 40px;
+      }
+
+      .technique {
+          width: 45%;
+      }
+
+      .technique-item {
+          width: 48%;
+      }
+      /*-----*/
+
+
+      /*support*/
+      #resources .resource-category ul {
+        columns: 2; 
+        -moz-columns: 2; 
+        -webkit-columns: 2; 
     }
-    .testimonial {
-        max-width: 500px; 
-        margin: 20px auto;
+
+    #resources .resource-category li {
+        margin-bottom: 20px;
     }
+      /*---*/
+
+
+      /*sign up*/
+      .signup-box {
+        max-width: 500px;
+    }
+      /**/
 
   }
 
