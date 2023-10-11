@@ -25,7 +25,7 @@
   }
 
   main {
-    margin-top: 3em; 
+    margin-top: 5%; 
 }
 
 
@@ -170,7 +170,7 @@
 
 .technique, .technique-item {
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20 0px;
     background-color: var(--light);
     color: var(--dark);
 }
@@ -181,14 +181,14 @@
       margin-top: 3%;
       line-height: 1.7rem;
       margin-bottom: 3%;
-      font-size: 1.1rem;
+      font-size: 1rem;
   }
 
   .introduction,
   .techniques-preview h1 h2 {
-      line-height: 1.7rem;
-      font-size: 2.5em;
-      margin-bottom: 4%;
+      line-height: 1.8rem;
+      font-size: 1.5em;
+      margin-bottom: 10%;
   }
 
   .techniques-preview p {
@@ -322,6 +322,10 @@
       text-decoration: none;
   }
 
+  #faqs h2, #faqs h3 {
+    margin-bottom: 20px; 
+}
+
   /*---*/
 
   /*support*/
@@ -352,6 +356,14 @@
       padding: 10px;
       border-radius: 4px;
   }
+
+  .faq-box {
+    background-color: var(--light); 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
 
 
   /*---*/
@@ -483,6 +495,11 @@
 
 
   @media screen and (min-width: 768px) {
+
+    .main {
+        margin-top: 80px;
+      }
+      
       .nav-toggle-label {
           display: none;
       }
@@ -599,15 +616,31 @@
 
 
       /*support*/
-      #resources .resource-category ul {
-          columns: 2;
-          -moz-columns: 2;
-          -webkit-columns: 2;
-      }
 
-      #resources .resource-category li {
-          margin-bottom: 20px;
-      }
+
+      .faq-item {
+        border: 1px solid var(--dark);
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    .faq-item input {
+        display: none; /* Hide the checkbox */
+    }
+    
+    .faq-item label {
+        cursor: pointer;
+        display: block;
+    }
+    
+    .faq-item p {
+        display: none; /* Hide the answer initially */
+    }
+    
+    .faq-item input:checked + label + p {
+        display: block; /* Show the answer when the checkbox is checked */
+    }
 
       /*---*/
 
