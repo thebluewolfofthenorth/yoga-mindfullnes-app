@@ -2,8 +2,12 @@
 
   :root {
       --background: #342809;
+      --primary: #FCBA12;
+      --secondary: #FED777;
+      --accent: #A77802;
+      --light: #FFF5DC;
+      --dark: #342809;
   }
-
 
   * {
       margin: 0;
@@ -11,33 +15,39 @@
       box-sizing: border-box;
   }
 
-
   body {
-      font-family: PT, sans-serif;
+      font-family: 'PT Serif', sans-serif;
       font-weight: 300;
-      color: #342809;
-      background-color: #FCBA12;
+      color: var(--dark);
+      background-color: var(--primary);
       padding-bottom: 50px;
+      margin-top: 0;
   }
+
+  main {
+    margin-top: 3em; 
+}
+
+
 
 
   /* heading and logo */
-
   h1,
   h2 {
-      font-size: PT, sans-serif;
+      font-family: 'PT Serif', sans-serif;
       text-transform: uppercase;
       letter-spacing: 4px;
-      color: #FED777;
+      color: var(--secondary);
   }
+
 
   .logo {
       float: right;
       font-size: 280%;
       margin-right: 50%;
+      font-family: 'Oxygen', sans-serif;
+      color: var(--light);
   }
-
-
 
   /* Navbar */
 
@@ -47,6 +57,9 @@
       position: fixed;
       z-index: 999;
       width: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
   }
 
   .nav-toggle {
@@ -114,16 +127,18 @@
   }
 
   nav a {
-      color: #FCBA12;
+      color: var(--light);
       text-decoration: none;
       font-size: 1.2rem;
       text-transform: uppercase;
       opacity: 0;
-      transition: opacity 250ms ease-in-out 250ms;
+      transition: opacity 250ms ease-in-out 250ms, color 250ms ease-in-out;
+      font-family: 'Oxygen', sans-serif;
   }
 
   nav a:hover {
-      color: #FFF5DC;
+      color: var(--secondary);
+      font-family: 'Oxygen', sans-serif;
   }
 
   .nav-toggle:checked~nav {
@@ -135,6 +150,8 @@
       transition: opacity 100ms ease-in-out;
   }
 
+  /*--end--*/
+
   /* hero image */
 
 
@@ -143,11 +160,48 @@
       width: 100%;
       overflow: hidden;
       position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin-bottom: 5%;
   }
+/*---technique---*/
+
+.technique, .technique-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+  .introduction,
+  .techniques-preview {
+      padding: 15px;
+      margin-top: 3%;
+      line-height: 1.7rem;
+      margin-bottom: 3%;
+      font-size: 1.1rem;
+  }
+
+  .introduction,
+  .techniques-preview h1 h2 {
+      line-height: 1.7rem;
+      font-size: 2.5em;
+      margin-bottom: 4%;
+  }
+
+  .techniques-preview p {
+      margin-bottom: 30px;
+  }
+
+/*---end---*/
+
+
 
   #cover-text,
   #cover-text h2 {
-      color: #A77802;
+      color: var(--dark);
   }
 
   #hero-image {
@@ -161,6 +215,7 @@
       animation-fill-mode: forwards;
   }
 
+  /*--end--*/
 
 
   /* creates the leve of zoom for hero image */
@@ -199,23 +254,26 @@
   /* testimonials*/
 
   #testimonials {
-      background-color: #FFF5DC;
+    background-color: var(--light);
       padding: 20px;
       text-align: center;
   }
 
   #testimonials h2 {
       margin-bottom: 20px;
-      color: #342809;
+      color: var(--dark); 
+      font-family: 'Oxygen', sans-serif;
   }
 
   .testimonial {
       margin-bottom: 20px;
+      background-color: var(--light);
   }
 
   .testimonial p {
-      font-style: Oxyge sans-serif;
+      font-family: 'Oxygen', sans-serif;
       margin-bottom: 10px;
+      color: var(--dark);
   }
 
   .testimonial span {
@@ -235,18 +293,19 @@
 
   #techniques-section {
       padding: 20px;
-      background-color: #FFF5DC;
+      background-color: var(--light); 
   }
 
   .technique {
       margin-bottom: 20px;
-      background-color: #FFF5DC;
+      background-color: var(--light); 
       padding: 20px;
       border-radius: 8px;
   }
 
   .technique h2 {
       margin-bottom: 10px;
+      color: var(--dark);
   }
 
   .technique-image {
@@ -259,7 +318,7 @@
   .technique a {
       display: inline-block;
       margin-top: 10px;
-      color: #FFF5DC;
+      color: var(--dark);
       text-decoration: none;
   }
 
@@ -267,73 +326,78 @@
 
   /*support*/
   #resources {
-    margin: 0 auto;
-    max-width: 800px;
-}
+      margin: 0 auto;
+      max-width: 800px;
+      color: var(--dark);
+  }
 
-.resource-category {
-    margin-bottom: 40px;
-}
+  .resource-category {
+      margin-bottom: 40px;
+  }
 
-.resource-category h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
+  .resource-category h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: var(--dark);
+  }
 
-.resource-category ul {
-    list-style-type: none;
-    padding: 0;
-}
+  .resource-category ul {
+      list-style-type: none;
+      padding: 0;
+  }
 
-.resource-category li {
-    background-color: #f0f0f0;
-    margin-bottom: 10px; 
-    padding: 10px;
-    border-radius: 4px;
-}
+  .resource-category li {
+    background-color: var(--light); 
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+  }
 
 
   /*---*/
 
   /*Sign up*/
   #signup-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures section takes up the full viewport height */
-    padding: 20px;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+  }
 
-.signup-box {
-    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
-    border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
-}
+  .signup-box {
+      background-color: var(--light);
+      border-radius: 8px;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+  form {
+      display: flex;
+      flex-direction: column;
+  }
 
-label, input {
-    margin-bottom: 10px;
-}
+  label,
+  input {
+      margin-bottom: 10px;
+  }
 
-input[type="submit"] {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
+  input[type="submit"] {
+      background-color: var(--accent);
+      color:  var(--light);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: 'Oxygen', sans-serif;
+  }
 
-input[type="submit"]:hover {
-    background-color: #2980b9;
-}
+  input[type="submit"]:hover {
+      background-color: var(--dark);
+      font-family: 'Oxygen', sans-serif;
+  }
 
 
 
@@ -346,17 +410,60 @@ input[type="submit"]:hover {
   }
 
 
+  /*---thank you---*/
+  #thankyou-section {
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thankyou-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#thankyou-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.back-home-button {
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: var(--dark);
+}
+
+  /*---end---*/
+
+
 
   /* sticky footer */
 
   footer {
-      background-color: #342809;
-      color: #342809;
+      background-color: var(--dark);
+      color: var(--light);
       text-align: center;
       padding: 20px;
       position: fixed;
       bottom: 0;
       width: 100%;
+      font-family: 'Oxygen', sans-serif;
   }
 
 
@@ -367,7 +474,11 @@ input[type="submit"]:hover {
       list-style-type: none;
       font-size: 150%;
   }
-
+  .social-networks a,
+  .social-networks a i {
+      color: var(--light);
+      text-decoration: none; 
+  }
 
 
 
@@ -447,9 +558,20 @@ input[type="submit"]:hover {
           background-position: bottom;
       }
 
+      .introduction,
+      .techniques-preview h2 {
+          line-height: 1.7rem;
+          margin-bottom: 1%;
+      }
+
+      .techniques-preview p {
+          margin-bottom: 30px;
+      }
+
+
 
       #testimonials {
-          text-align: left;
+          text-align: center;
       }
 
       .testimonial {
@@ -472,26 +594,29 @@ input[type="submit"]:hover {
       .technique-item {
           width: 48%;
       }
+
       /*-----*/
 
 
       /*support*/
       #resources .resource-category ul {
-        columns: 2; 
-        -moz-columns: 2; 
-        -webkit-columns: 2; 
-    }
+          columns: 2;
+          -moz-columns: 2;
+          -webkit-columns: 2;
+      }
 
-    #resources .resource-category li {
-        margin-bottom: 20px;
-    }
+      #resources .resource-category li {
+          margin-bottom: 20px;
+      }
+
       /*---*/
 
 
       /*sign up*/
       .signup-box {
-        max-width: 500px;
-    }
+          max-width: 500px;
+      }
+
       /**/
 
   }
