@@ -334,6 +334,16 @@
       text-decoration: none;
   }
 
+  .technique-item img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .technique-list img {
+    max-width: 100%;
+    height: auto;
+}
+
   #faqs h2,
   #faqs h3 {
       margin-bottom: 20px;
