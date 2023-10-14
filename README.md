@@ -40,7 +40,7 @@ project-root/
 ├── support.html
 ├── signup.html
 └── README.md
-
+```
 
 ## Site Structure
 The website is structured into four main pages:
