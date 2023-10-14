@@ -68,7 +68,26 @@ The color scheme of the project is vibrant and engaging, derived from a palette 
 - **Quinary Color**: `#342809` (Very Dark Brown)
 
 
-## Wireframes:
+### Wireframes:
+
+The wireframes for PUST  [Balsamiq]("https://balsamiq.cloud/"). There are frames for a full width display and a small mobile device. The final site varies slightly.
+
+![Picture from Home section](./assets/images/Home.png "Homepage")
+
+![Picture from Techniques section](./assets/images/Techniques.png "Techniques")
+
+![Picture from Support section](./assets/images/Support.png"Support")
+
+![Picture from Sign up section](./assets/images/Sign_up.png.png "Sign up")
+
+![Picture from mobile home section](./assets/images/Home_2.png "Home-mobile")
+
+![Picture from Techniques-mobile section](./assets/images/Techniques_2.png "Techniques Mobile")
+
+![Picture from Fun Support-mobile section](./assets/images/Support_2.png "Support Mobile")
+
+![Picture from Sign-up-mobile section](./assets/images/Sign_up_1.png "Sign up-mobile")
+
 
 Home page (index.html)
 
