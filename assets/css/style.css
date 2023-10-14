@@ -200,20 +200,14 @@
       font-size: 1rem;
       padding: 15px;
       margin-bottom: 1%;
-
-
   }
 
   .technique,
   .technique-item {
       padding: 20px;
-      margin-bottom: 20 0px;
       background-color: var(--light);
       color: var(--dark);
   }
-
-
-
 
   .techniques-preview h1,
   .techniques-preview h2 {
@@ -323,16 +317,16 @@
 
   /*Techniques*/
 
-  .technique-headline{
-    margin-top: 5rem;
-    padding-top: 1rem;
+  .technique-headline {
+      margin-top: 5rem;
+      padding-top: 1rem;
 
-    color: var(--dark);
+      color: var(--dark);
   }
 
-  .technique-headline h1{
-    color: var(--dark);
-    font-size: 250%;
+  .technique-headline h1 {
+      color: var(--dark);
+      font-size: 250%;
   }
 
   #techniques-section {
@@ -682,7 +676,6 @@
 
       header {
           display: grid;
-          grid-template-columns: 1fr auto minmax(600px 1fr) 3fr;
       }
 
       .logo {
@@ -694,9 +687,8 @@
           grid-column: 3/4;
           display: flex;
           justify-content: flex-end;
-          align-items: right;
+          align-items: end;
           margin: 1em;
-
       }
 
       nav ul {
@@ -706,7 +698,7 @@
 
       nav li {
           margin-left: 3em;
-          margin-bottom: o;
+          margin-bottom: 0;
       }
 
       nav a {
