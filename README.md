@@ -2,7 +2,9 @@
 
 This project encompasses a welcoming website for the PUST Yoga & Mindfulness Center, offering detailed insights on yoga and mindfulness techniques, a support section for enthusiasts, and a signup page for classes. The design is mobile-responsive, ensuring a smooth user experience across various devices.
 
-![Screenshot of the website](screenshot.jpg) 
+![Screenshot of the website](./assets/images/testing/desktop_version.png) 
+
+![Screenshot of the website](./assets/images/testing/mobil_version.png) 
 
 ## Table of Contents
 
@@ -16,7 +18,7 @@ This project encompasses a welcoming website for the PUST Yoga & Mindfulness Cen
 
 ## Demo
 
-The live demo of the website is in progress. (You can update this section once your website is live)
+The live demo of the website is in progress. https://thebluewolfofthenorth.github.io/yoga-mindfullnes-app/
 
 ## Technologies Used
 
@@ -34,12 +36,14 @@ project-root/
 │   │   └── style.css
 │   ├── images/
 │       └── ... (image files)
+        └── ... (testing files)
 │
 ├── index.html
 ├── techniques.html
 ├── support.html
 ├── signup.html
 └── README.mdgi
+└── TESTING.mdgi
 ```
 
 ## Site Structure
@@ -49,6 +53,7 @@ The website is structured into four main pages:
 - **Techniques Page**: Showcases various yoga and mindfulness techniques.
 - **Support Page**: Lists support resources and frequently asked questions.
 - **Sign-Up Page**: Features a form for interested visitors to join the center or request more information.
+- **Cofirmation pager**: Features a confirmation after submiting the sign-up form.
 
 ## Typography
 The website employs the "Oxygen" and "PT Serif" fonts from Google Fonts to achieve a contemporary and refined design:
@@ -176,6 +181,9 @@ A page listing support resources and frequently asked questions.
 ### Sign Up Page (`signup.html`)
 A page with a form for interested visitors to sign up for more information.
 
+### Confirmation Page (`signup.html`)
+A page with confirmation for the submit form.
+
 ## CSS Styles
 The styling for the website is contained in the `style.css` file located in the `assets/css/` directory. The CSS code defines a color scheme, typography, layout, and responsive design settings to ensure the website is accessible across a variety of devices.
 
@@ -191,13 +199,13 @@ The styling for the website is contained in the `style.css` file located in the 
 
 ## Testing
 
-Please refer to <a href="https://github.com/DFCMK/Budapest/blob/main/TESTING.md"><em>here<em></a> for more information on testing Budapest - A Historical Travel Guide
+Please refer to <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app"><em>here<em></a> for more information on testing PUST-Yoga-and-mindfullnes
 
 ## Deployment 
 
 This site was depolyed to GitHub pages. The steps to deploy a site are shown below:
 
-1. In the GitHub Repository called <b>Budapest</b> click on the <b>Settings</b> button on the Repoitory navigation menu.
+1. In the GitHub Repository called <b>yoga-mindfullnes-app</b> click on the <b>Settings</b> button on the Repoitory navigation menu.
 
 2. In <b>Settings</b> on the left side, go down to the <b>Pages</b> item and click on it.
 
@@ -205,36 +213,17 @@ This site was depolyed to GitHub pages. The steps to deploy a site are shown bel
 
 4. at the <b>Branch</b> item underneth the <b>source</b> item, set the branch to main and save it.
 
-5. Once you have selected the main branch, the page will automatically refresh to show a detailed ribbon display indicating that the deployment was successful. If the page does not refresh automatically, refresh it manually.
+5. Once you have selected the main branch, the page will automatically refresh to show a detailed ribbon display indicating that the deployment was successful.
 
-![Screenshoot from Github deployment](./assets/images/guthub-deployment.png "GitHub depoloyment")
-
-To get to the live link of the GitHub repository - click here: <a href="https://github.com/DFCMK/Budapest">https://github.com/DFCMK/Budapest</a>
+To get to the live link of the GitHub repository - click here: <a href="https://thebluewolfofthenorth.github.io/yoga-mindfullnes-app/">https://thebluewolfofthenorth.github.io/yoga-mindfullnes-app/</a>
 
 
-### To Fork the repository on GitHub:
-
-
-
-Forking a GitHub repository creates a copy of the repository in your own GitHub account. You can view and modify the copy without affecting the original repository.
-
-To fork a repository:
-
-1. Log in to GitHub and navigate to the repository you want to fork.
-2. Click the Fork button in the top-right corner of the page.
-3. Select a name for your forked repository.
-4. Click the Fork button to create the copy.
-
-Once you have forked a repository, you can clone it to your local computer and start making changes. When you are ready to share your changes, you can create a pull request to the original repository.
-
-![Screenshoot from Github deployment](./assets/images/forking.png "GitHub depoloyment")
 
 #### To create a local clone of this project:
 
 1. Click the Code tab under the repository's name.
 2. Click the clipboard icon in the Clone with HTTPS section to copy the URL.
 
-![Screenshoot from Github deployment](./assets/images/git-clone.png "GitHub depoloyment")
 
 Once you have copied the URL, you can use a Git client to clone the repository to your local computer.
 Here are the steps to clone a repository using Git Bash:
@@ -253,27 +242,29 @@ You also can create and name the directory where the clone should be saved in, w
 
 ## Credits
 
-  ### Content:
+  ## Content
+- Yoga and Mindfulness Techniques: 
+   - Content for the Techniques page was inspired by [Yoga Journal](https://www.yogajournal.com/) and [Mindful](https://www.mindful.org/).
+   - [Introduction to Yoga - Harvard Health](https://www.health.harvard.edu/exercise-and-fitness/introduction-to-yoga-copy#:~:text=,health%20on%20many%20different%20levels): Provided insights into the health benefits of yoga on different levels.
+   - [Mindfulness Exercises - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/mindfulness-exercises/art-20046356#:~:text=Mindfulness%20is%20a%20type%20of,mind%20and%20help%20reduce%20stress): Offered a type of mental training to refocus the mind and help reduce stress.
+   - [An Introduction to Mindfulness - Oxygen Yoga and Fitness](https://oxygenyogaandfitness.com/an-introduction-to-mindfulness/#:~:text=In%20furtherance%20of%20incorporating%20mindfulness,focus%20of%20your%20yoga%20practice): Discussed the incorporation of mindfulness into the focus of yoga practice.
+   - [An Introduction to Mindfulness through Yoga, Tai Chi, and Meditation - CG Scholar](https://www.cgscholar.com/bookstore/works/an-introduction-to-mindfulness-through-yoga-tai-chi-and-meditation#:~:text=Though%20being%20mindful%20in%20the,yoga%2C%20tai%20chi%2C%20and%20meditation): Explored being mindful through yoga, tai chi, and meditation.
+   - [Common Yoga Poses - Greatist](https://greatist.com/move/common-yoga-poses#:~:text=,away%20from%20your%20ears%2C%20draw)
+   - [Yoga Poses for Beginners - Yoga Basics](https://www.yogabasics.com/practice/yoga-for-beginners/yoga-poses-beginners/#:~:text=,pose%20and%20cow%20pose)
+   - [Common Yoga Breathing Techniques - health.gov.capital](https://health.gov.capital/what-are-some-common-yoga-breathing-techniques/#:~:text=Here%20are%20some%20common%20yoga,the%20back%20of%20the%20throat)
+   - [Types of Yoga Breath - My Yoga Teacher](https://www.myyogateacher.com/articles/types-of-yoga-breath#)
+- Breathing Exercises: Information about breathing exercises was gathered from [Breathworks](https://www.breathworks-mindfulness.org.uk/).
+- Mindfulness Exercises:
+   - [Simple Ways to Practice Mindfulness - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/mindfulness-exercises/art-20046356#:~:text=There%20are%20many%20simple%20ways,sound%2C%20sight%2C%20smell%20and%20taste)
+   - [Mindfulness Techniques for Depression, Anger - Positive Psychology](https://positivepsychology.com/mindfulness-exercises-techniques-activities/#:~:text=Mindfulness%20Techniques%20for%20Depression%2C%20Anger%2C,has%20shown%20some%20promising%20results)
+   - [Best Mindfulness Exercises - Self](https://www.self.com/story/best-mindfulness-exercises#:~:text=Anxiety,Reviewed%20by%20Sabrina)
+   - [Mindfulness Activities - Healthline](https://www.healthline.com/health/mind-body/mindfulness-activities#:~:text=One%20of%20the%20most%20common,These%20exercises%20are)
 
-   - The font came from <a href="https://fonts.google.com/">Google Fonts.</a>
-   - The colour palate was compiled by  <a href="https://www.w3schools.com/colors/colors_monochromatic.asp">W3Schools</a>
-   - The icons came from <a href="https://fontawesome.com/search?q=swi&o=r&m=free">Font Awesome</a>
-   - The Navigation Menu got created with a <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA">YouTube tutorial.</a>
-   - The inspiration for the Project came during creation process.
-   - <a href="https://balsamiq.cloud/s3wc28z/p2hs46j/r2278">Balsamiq</a> was used to create the wireframes.
 
-   - The Gallery was build with code based on the <a href="https://github.com/DFCMK/Love-Running">Love Running</a>
 
-   - The content of [Chainbridge](#chainbridge) on the [Historical Places](#historical-places) is mostly summarized from the book <b><q>Hungry History and Culture</q></b> chapter: <b><q>Reformation period</q></b> sub chapter: <b><q>Hitel written by Istvan Szechenyi 1830</p></b> 
+- The yoga and mindfulness techniques described in this project were inspired by [Source Name](source URL).
+- Imagery sourced from [Source Name](source URL).
 
-   - The rest of the content are summerised wikipedia articles, see below: 
-   <a href="https://en.wikipedia.org/wiki/Hungarian_Parliament_Building">Hungarian Parliament</a>
-   <a href="https://en.wikipedia.org/wiki/Buda_Castle">Buda Castle</a> 
-   <a href="https://en.wikipedia.org/wiki/Matthias_Church">Matthias Church</a> 
-   <a href="https://en.wikipedia.org/wiki/Szimpla_Kert">Szimpla Kert</a> 
-   <a href="https://en.wikipedia.org/wiki/Gell%C3%A9rt_Baths">Gellert Bath</a>
-   <a href="https://en.wikipedia.org/wiki/Sz%C3%A9chenyi_thermal_bath">Széchenyi Bath</a>
-   <a href="https://en.wikipedia.org/wiki/Great_Market_Hall,_Budapest">The Great Market Hall</a>     
 
    ### Media:
 
@@ -283,18 +274,20 @@ You also can create and name the directory where the clone should be saved in, w
 
    ### Code: 
 
-   The Navigation Menu was build with a <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA">YouTube tutorial</a> and the code is based on this video. The code can be find in line 17 - 98 and line 646 - 666. 
-   To see the code click <a href="https://github.com/DFCMK/Budapest/blob/main/assets/css/style.css">here</a>
+   The Navigation Menu was build with a <a href="https://www.youtube.com/watch?v=8QKOaTYvYUA">YouTube tutorial</a> and the code is based on this video. 
+   To see the code click <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app/blob/main/assets/css/style.css">here</a>
 
-   The Gallery page was build, while using the "Love Running" project as Guideline. (line 454 - 464) and (line 575 - 582).
-   To see the code click <a href="https://github.com/DFCMK/Budapest/blob/main/assets/css/style.css">here</a>
+   The  page was build, while using the "Love Running" project as Guideline.
+   To see the code click <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app/blob/main/assets/css/style.css">here</a>
+
+      The  page was build, while using the "Sofing" project as Guideline.
+   To see the code click <a href="https://github.com/thebluewolfofthenorth/yoga-mindfullnes-app/blob/main/assets/css/style.css">here</a>
 
    ## Acknowledgements:
 
-   I extend my heartfelt thanks to several individuals and communities who contributed to the completion of this project:
+   thanks to my mentor Ronan to help me along to the completion of this project
 
-- <a href="https://www.linkedin.com/in/precious-ijege-908a00168/">Precious Ijege</a>, my dedicated mentor, for providing valuable guidance and support throughout the development process.
 
-- The Code Institute's Slack community, a source of inspiration and assistance from fellow learners and professionals.
+## note:
 
-- The entire Code Institute team, whose resources and expertise have been instrumental in my learning journey.
+I had quite a lot of problem that I did not know how to fix and the time was running out from. I also have to say that I use a lot of code from different sources but made my own andI was pretty unsure on how to credit them. please note that README file I copy the structure form of other readme files found on github.  

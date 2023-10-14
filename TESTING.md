@@ -2,50 +2,44 @@
 
 ## Code Validation
 
-- The Budapest - A Historical Travel Guide website has been thoroughly tested. All of the code has been run through the W3C HTML Validator and the W3C CSS Validator. Minor errors were found on the home, Historical places, and Contact pages, as well as a warning on the Gallery page.
+- Pust yoga and mindfulness website has been thoroughly tested. All of the code has been run through the W3C HTML Validator and the W3C CSS Validator. errors were found on the home, support, and technique, as well as a warning.
 
-All of the errors have been fixed, except for the warning on the Gallery page. You can see the warning in the screenshot below.
+Some of the errors have been fixed, except for the warning on. mostly because of the lack of time and not knowing how to fix them. 
 
-Six minor errors were also found in the CSS stylesheets, which have all been fixed. You can see the errors in the screenshot below.
 
 The HTML validator results for each page are below:
 
+ - Technique:
+
+ ![Screenshoot HTML5 Validator](./assets/images/testing/html_validator.png "HTML Validation report technique ")
+
  - Home:
 
- ![Screenshoot HTML5 Validator](./assets/images/validation-html-home.png "HTML Validation report Homepage")
+ ![Screenshoot HTML5 Validator](./assets/images/testing/html_home.png "HTML Validation report Home")
 
- - Historical Places:
+ - Support:
 
- ![Screenshoot HTML5 Validator](./assets/images/validation-historical-places(html).png "HTML Validation report Historical places")
+ ![Screenshoot HTML5 Validator](./assets/images/testing/html_support.png "HTML Validation report Support")
 
- - Fun places:
+ - Sign up:
 
- ![Screenshoot HTML5 Validator](./assets/images/validation-fun-places(html).png "HTML Validation report fun places")
+ ![Screenshoot HTML5 Validator](./assets/images/testing/html_home.png "HTML Validation report sign up")
 
- - Gallery:
-
- ![Screenshoot HTML5 Validator](./assets/images/gallery-validation(1xwarning).png "HTML Validation report Gallery")
-
- - Contact: 
-
- ![Screenshoot HTML5 Validator](./assets/images/validation-contact(html).png "HTML Validation report Contact page")
 
  - Confirmation: 
 
- ![Screenshoot HTML5 Validator](./assets/images/confirmation-validation(html).png "HTML Validation report Confirmaton page")
+ ![Screenshoot HTML5 Validator](./assets/images/testing/html_home.png "HTML Validation report Confirmaton page")
 
  - CSS stylesheet - CSS Validator result:
 
- ![Screenshoot HTML5 Validator](./assets/images/css-validator.png "HTML Validation report Confirmaton page")
+ ![Screenshoot HTML5 Validator](./assets/images/testing/css_validator.png)
 
  ## Responsivness Test
  The responsive design tests were carried out manually with <a href="https://developer.chrome.com/docs/devtools/">Google Chrome DevTools</a> and <a href="https://www.responsivedesignchecker.com/">Responsive Design Checker</a> and <a href="https://www.mozilla.org/en-US/firefox/developer/">Firefox DevTools</a>
 
  The site passed all Test on the <a href="https://www.responsivedesignchecker.com/">Responsive Design Checker.</a>
  
- Please **Note:**
- 
- in landscape mode on mobile and tablet devices, you might notice that the images on the <strong><q>Historical Places</q></strong> and <strong><q>Fun Places</q></strong> pages don't adjust to fill the available space. They won't expand to fit the screen in this orientation
+
 
  ### Lighthouse
 
@@ -60,11 +54,11 @@ The HTML validator results for each page are below:
 
 The Screenshot below show the result for Desktops: 
 
-![Screenshoot Desktop Lighthouse result](./assets/images/desktop-devices-lighthouse.png "results for desktops")
+![Screenshoot Desktop Lighthouse result](./assets/images/testing/lighhouse_desktop.png "results for desktops")
 
 The Screenshot below show the result for small devices like mobiles:
 
-![Screenshoot Desktop Lighthouse result](./assets/images/mobile-devices-lighthouse.png "results for mobiles")
+![Screenshoot Mobil Lighthouse result](./assets/images/testing/lighhhouse_mobil.png "results for mobiles")
 
 
 
