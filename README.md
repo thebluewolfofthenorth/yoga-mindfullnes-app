@@ -2,6 +2,8 @@
 
 This project encompasses a welcoming website for the PUST Yoga & Mindfulness Center, offering detailed insights on yoga and mindfulness techniques, a support section for enthusiasts, and a signup page for classes. The design is mobile-responsive, ensuring a smooth user experience across various devices.
 
+![Screenshot of the website](screenshot.jpg) 
+
 ## Table of Contents
 
 1. [Demo](#demo)

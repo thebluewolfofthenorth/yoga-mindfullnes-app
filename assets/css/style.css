@@ -10,10 +10,15 @@
   }
 
   * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+
+  section {
+    margin: 0;
+    padding: 10px 0; 
+}
 
   body {
       font-family: 'PT Serif', sans-serif;
@@ -25,8 +30,18 @@
   }
 
   main {
-      margin-top: 3.5em;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+      margin-top: 2.0em;
+      margin-bottom: 1.0em;
   }
+
+  .text-container {
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 
@@ -39,16 +54,20 @@
       letter-spacing: .1em;
       color: var(--secondary);
       font-size: 1.5em;
+      font-weight:bold;
   }
 
 
   .logo {
       float: right;
       font-size: 280%;
-      margin-right: 50%;
+      margin-right: 30%;
       font-family: 'Oxygen', sans-serif;
       color: var(--light);
+      max-width: 100%;
+      height: auto;
   }
+  
 
   /* Navbar */
 
@@ -153,14 +172,6 @@
 
   /*--end--*/
 
-  .introduction {
-      padding: 15px;
-      margin-top: 3%;
-      line-height: 1.7rem;
-      margin-bottom: 3%;
-      font-size: 1rem;
-  }
-
 
   /* hero image */
 
@@ -178,6 +189,18 @@
   }
 
   /*---technique---*/
+  
+  .introduction, .techniques-preview, #testimonials {
+    margin: 0;  
+    padding: 20px 0;
+    margin-top: 1%;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    padding: 15px;
+    margin-bottom: 1%;
+
+
+}
 
   .technique,
   .technique-item {
@@ -188,20 +211,13 @@
   }
 
 
-  .techniques-preview {
-      padding: 15px;
-      margin-top: 3%;
-      line-height: 1.7rem;
-      margin-bottom: 3%;
-      font-size: 1rem;
-  }
 
 
-  .techniques-preview h1 h2 {
-      line-height: 1.8rem;
-      font-size: 1.5em;
-      margin-bottom: 10%;
-  }
+  .techniques-preview h1, .techniques-preview h2 {
+    line-height: 1.8rem;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
 
   .techniques-preview p {
       margin-bottom: 30px;
@@ -213,8 +229,9 @@
 
   #cover-text,
   #cover-text h2 {
-      color: var(--dark);
-  }
+      color : var(--dark);
+    margin-bottom : 1em;
+}
 
   #hero-image {
       height: 600px;
@@ -344,10 +361,7 @@
     height: auto;
 }
 
-  #faqs h2,
-  #faqs h3 {
-      margin-bottom: 20px;
-  }
+
 
   /*---*/
 
@@ -374,34 +388,90 @@
   }
 
   .resource-category li {
-      background-color: var(--light);
+      background-color: var(--secondary);
       margin-bottom: 10px;
       padding: 10px;
       border-radius: 4px;
   }
 
+
+
+#contact h2 {
+    margin-bottom: 10px; 
+}
+.contact-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;  
+    background-color: var(--secondary); 
+    border-radius: 8px; 
+    padding: 30px; 
+    margin: 30px 0;
+
+}
+
+
+
+#support-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+
+#support-section h1 {
+    color: var(--background); 
+}
+
   .faq-box {
-      background-color: var(--light);
+      background-color: var(--secondary);
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out; 
+
   }
+
+
+
+  #faqs h2,
+  #faqs h3 {
+      margin-bottom: 20px;
+  }
+
+  .faq-item label {
+    cursor: pointer; 
+}
 
 
   /*---*/
 
   /*Sign up*/
-  #signup-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /*--min-height: 100vh;--*/
-      height: 100%;
-      padding: 20px;
-      background-color: var(--primary);
-  }
 
+  main#signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 20px;
+    background-color: var(--primary);
+}
+
+.signup-box {
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* You can adjust this value */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+ 
   .signup-box {
       background-color: var(--light);
       border-radius: 8px;
@@ -411,6 +481,20 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
   }
+
+  .signup-box h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    font-size: 1em;
+    color: var(--dark);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+
 
   form {
       display: flex;
@@ -449,7 +533,8 @@
 
   section h2 {
       color: #342809;
-      text-decoration: underline;
+      text-decoration: none;
+      font-weight: bold;
   }
 
 
@@ -524,9 +609,50 @@
       text-decoration: none;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 1.2rem;  
+    }
+  
+    .text-container {
+      width: 90%;  
+    }
+  
+    h1, h2 {
+      font-size: 1.8em;  
+    }
+  
+   
+  
+    nav {
+      display: flex;  
+      justify-content: space-around;  
+    }
+  
+    nav li {
+      margin: 0;  
+    }
+  
+    .technique,
+    .technique-item {
+      margin-bottom: 10px; 
+    }
+  
+    .testimonial {
+      padding: 10px; 
+    }
+  
+    .signup-box {
+      max-width: 350px; 
+    }
+  
+  }
 
 
   @media screen and (min-width: 768px) {
+
+
+    
 
       .main {
           margin-top: 80px;
@@ -589,10 +715,6 @@
 
       }
 
-      .introduction {
-          font-size: 0.9rem;
-          line-height: 1.5rem;
-      }
 
       #cover-text {
           font-size: 130%;
@@ -635,10 +757,22 @@
 
 
       /*Techniques*/
+
+      .technique-headline{
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      padding: 40px;
+  }
+
       #techniques-section {
           display: flex;
           justify-content: space-between;
           padding: 40px;
+      }
+
+      #techniques-section h2{
+        flex-direction: column;
       }
 
       .technique {
@@ -690,6 +824,7 @@
           max-width: 500px;
       }
 
+
       /**/
 
   }
@@ -714,4 +849,10 @@
       }
 
 
+  }
+
+  @media screen and (max-width: 1000px) {
+    .logo {
+      font-size: 200%; 
+    }
   }
